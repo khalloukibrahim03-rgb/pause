@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.Pause.Keyboard.Light" parent="androidx.activity.ComposeMaterial3.Light">
+        <item name="colorPrimary">@color/pause_primary</item>
+        <item name="colorPrimaryVariant">@color/pause_primary_variant</item>
+        <item name="colorOnPrimary">@color/pause_on_primary</item>
+        <item name="colorSecondary">@color/pause_secondary</item>
+        <item name="colorSecondaryVariant">@color/pause_secondary_variant</item>
+        <item name="colorOnSecondary">@color/pause_on_secondary</item>
+        <item name="android:windowBackground">@color/pause_window_bg_light</item>
+        <item name="colorSurface">@color/pause_surface_light</item>
+        <item name="colorOnSurface">@color/pause_on_surface_light</item>
+    </style>
+
+    <style name="Theme.Pause.Keyboard.Dark" parent="androidx.activity.ComposeMaterial3.Dark">
+        <item name="colorPrimary">@color/pause_primary</item>
+        <item name="colorPrimaryVariant">@color/pause_primary_variant</item>
+        <item name="colorOnPrimary">@color/pause_on_primary</item>
+        <item name="colorSecondary">@color/pause_secondary</item>
+        <item name="colorSecondaryVariant">@color/pause_secondary_variant</item>
+        <item name="colorOnSecondary">@color/pause_on_secondary</item>
+        <item name="android:windowBackground">@color/pause_window_bg_dark</item>
+        <item name="colorSurface">@color/pause_surface_dark</item>
+        <item name="colorOnSurface">@color/pause_on_surface_dark</item>
+    </style>
+
+    <style name="KeyboardKey.Light">
+        <item name="android_background">@color/key_bg_light</item>
+        <item name="android_textColor">@color/key_text_light</item>
+    </style>
+
+    <style name="KeyboardKey.Dark">
+        <item name="android_background">@color/key_bg_dark</item>
+        <item name="android_textColor">@color/key_text_dark</item>
+    </style>
+
+</resources>

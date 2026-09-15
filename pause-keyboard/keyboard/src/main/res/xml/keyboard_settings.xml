@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceHeader
+        android:title="@string/settings_header_appearance"
+        android:key="header_appearance" />
+
+    <ListPreference
+        android:key="pref_language"
+        android:title="@string/settings_language_title"
+        android:dialogTitle="@string/settings_language_title"
+        android:entries="@array/language_names"
+        android:entryValues="@array/language_values"
+        android:defaultValue="en" />
+
+    <SeekBarPreference
+        android:key="pref_keyboard_height"
+        android:title="@string/settings_keyboard_height_title"
+        android:summary="@string/settings_keyboard_height_summary"
+        android:defaultValue="45"
+        android:max="65"
+        android:min="25" />
+
+    <SwitchPreferenceCompat
+        android:key="pref_haptic"
+        android:title="@string/settings_haptic_title"
+        android:summary="@string/settings_haptic_summary"
+        android:defaultValue="true" />
+
+    <SwitchPreferenceCompat
+        android:key="pref_sound"
+        android:title="@string/settings_sound_title"
+        android:summary="@string/settings_sound_summary"
+        android:defaultValue="false" />
+
+    <SeekBarPreference
+        android:key="pref_vibration_intensity"
+        android:title="@string/settings_vibration_title"
+        android:summary="@string/settings_vibration_summary"
+        android:defaultValue="40"
+        android:max="255"
+        android:min="0" />
+
+    <SwitchPreferenceCompat
+        android:key="pref_dark_theme"
+        android:title="@string/settings_theme_title"
+        android:summary="@string/settings_theme_summary"
+        android:defaultValue="false" />
+
+    <PreferenceHeader
+        android:title="@string/settings_header_privacy"
+        android:key="header_privacy" />
+
+    <SwitchPreferenceCompat
+        android:key="pref_interventions"
+        android:title="@string/settings_interventions_title"
+        android:summary="@string/settings_interventions_summary"
+        android:defaultValue="true" />
+
+    <SeekBarPreference
+        android:key="pref_intervention_cooldown"
+        android:title="@string/settings_intervention_cooldown_title"
+        android:summary="@string/settings_intervention_cooldown_summary"
+        android:defaultValue="60000"
+        android:max="300000"
+        android:min="10000" />
+
+    <PreferenceHeader
+        android:title="@string/settings_header_about"
+        android:key="header_about" />
+
+    <Preference
+        android:key="pref_about"
+        android:title="@string/app_name"
+        android:summary="@string/app_version" />
+</androidx.preference.PreferenceScreen>

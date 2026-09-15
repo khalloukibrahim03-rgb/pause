@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Light theme for companion app -->
+    <color name="pause_primary">#4A90E2</color>
+    <color name="pause_on_primary">#FFFFFF</color>
+    <color name="pause_surface">#F5F5F5</color>
+    <color name="pause_on_surface">#212121</color>
+    <color name="pause_background">#FFFFFF</color>
+    <color name="pause_error">#B00020</color>
+    <color name="pause_error_container">#F9E5E5</color>
+
+    <!-- Dark theme for companion app -->
+    <color name="pause_surface_dark">#1E1E1E</color>
+    <color name="pause_on_surface_dark">#E0E0E0</color>
+    <color name="pause_background_dark">#121212</color>
+
+    <!-- Dashboard -->
+    <color name="dashboard_card_bg">#F0F8FF</color>
+    <color name="dashboard_card_bg_dark">#1E2A3A</color>
+    <color name="dashboard_progress">#4A90E2</color>
+    <color name="dashboard_progress_secondary">#FF9800</color>
+</resources>

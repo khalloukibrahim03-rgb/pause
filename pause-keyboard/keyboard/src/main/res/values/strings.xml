@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="keyboard_name">PAUSE Keyboard</string>
+    <string name="settings_header_appearance">Appearance</string>
+    <string name="settings_header_privacy">Privacy & Interventions</string>
+    <string name="settings_header_about">About</string>
+    <string name="settings_language_title">Keyboard language</string>
+    <string name="settings_keyboard_height_title">Keyboard height</string>
+    <string name="settings_keyboard_height_summary">Adjust keyboard height</string>
+    <string name="settings_haptic_title">Haptic feedback</string>
+    <string name="settings_haptic_summary">Vibrate on key press</string>
+    <string name="settings_sound_title">Key press sound</string>
+    <string name="settings_sound_summary">Play sound on key press</string>
+    <string name="settings_vibration_title">Vibration intensity</string>
+    <string name="settings_vibration_summary">Adjust vibration strength</string>
+    <string name="settings_theme_title">Dark theme</string>
+    <string name="settings_theme_summary">Use dark keyboard theme</string>
+    <string name="settings_interventions_title">Pause interventions</string>
+    <string name="settings_interventions_summary">Show subtle pause prompts</string>
+    <string name="settings_intervention_cooldown_title">Intervention cooldown</string>
+    <string name="settings_intervention_cooldown_summary">Seconds between interventions</string>
+    <string name="app_name">PAUSE</string>
+    <string name="app_version">1.0.0</string>
+
+    <string-array name="language_names">
+        <item>English</item>
+        <item>Arabic</item>
+    </string-array>
+
+    <string-array name="language_values">
+        <item>en</item>
+        <item>ar</item>
+    </string-array>
+</resources>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="keyboard_name">لوحة مفاتيح باوز</string>
+    <string name="settings_header_appearance">المظهر</string>
+    <string name="settings_header_privacy">الخصوصية والتداخلات</string>
+    <string name="settings_header_about">عن التطبيق</string>
+    <string name="settings_language_title">لغة لوحة المفاتيح</string>
+    <string name="settings_keyboard_height_title">ارتفاع لوحة المفاتيح</string>
+    <string name="settings_keyboard_height_summary">اضبط ارتفاع لوحة المفاتيح</string>
+    <string name="settings_haptic_title">ردود الفعل اللمسية</string>
+    <string name="settings_haptic_summary">اهتزاز عند الضغط على المفتاح</string>
+    <string name="settings_sound_title">صوت الضغط على المفتاح</string>
+    <string name="settings_sound_summary">تشغيل صوت عند الضغط على المفتاح</string>
+    <string name="settings_vibration_title">شدة الاهتزاز</string>
+    <string name="settings_vibration_summary">اضبط شدة الاهتزاز</string>
+    <string name="settings_theme_title">السمة الداكنة</string>
+    <string name="settings_theme_summary">استخدام سمة داكنة للوحة المفاتيح</string>
+    <string name="settings_interventions_title">مقابلات باوز</string>
+    <string name="settings_interventions_summary">عرض إشعارات منبهة خفيفة</string>
+    <string name="settings_intervention_cooldown_title">فترة برودة التداخل</string>
+    <string name="settings_intervention_cooldown_summary">الثواني بين التداخلات</string>
+    <string name="app_name">باوز</string>
+    <string name="app_version">1.0.0</string>
+
+    <string-array name="language_names">
+        <item>إنجليزي</item>
+        <item>عربي</item>
+    </string-array>
+
+    <string-array name="language_values">
+        <item>en</item>
+        <item>ar</item>
+    </string-array>
+</resources>

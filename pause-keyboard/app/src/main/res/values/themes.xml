@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Theme.Pause" parent="androidx.activity.ComposeMaterial3.Light">
+        <item name="colorPrimary">@color/pause_primary</item>
+        <item name="colorOnPrimary">@color/pause_on_primary</item>
+        <item name="colorSurface">@color/pause_surface</item>
+        <item name="colorOnSurface">@color/pause_on_surface</item>
+        <item name="android:windowBackground">@color/pause_background</item>
+        <item name="colorError">@color/pause_error</item>
+        <item name="colorErrorContainer">@color/pause_error_container</item>
+        <item name="android:statusBarColor">?colorPrimary</item>
+    </style>
+
+    <style name="Theme.Pause.Dark" parent="androidx.activity.ComposeMaterial3.Dark">
+        <item name="colorPrimary">@color/pause_primary</item>
+        <item name="colorOnPrimary">@color/pause_on_primary</item>
+        <item name="colorSurface">@color/pause_surface_dark</item>
+        <item name="colorOnSurface">@color/pause_on_surface_dark</item>
+        <item name="android:windowBackground">@color/pause_background_dark</item>
+        <item name="colorError">@color/pause_error</item>
+        <item name="colorErrorContainer">@color/pause_error_container</item>
+    </style>
+
+    <style name="Theme.Pause.Splash" parent="Theme.Pause">
+        <item name="android:windowSplashScreenBackground">@color/pause_primary</item>
+        <item name="android:windowSplashScreenAnimatedIcon">@drawable/ic_pause_logo</item>
+    </style>
+
+    <style name="Theme.Pause.Splash.Dark" parent="Theme.Pause.Dark">
+        <item name="android:windowSplashScreenBackground">@color/pause_primary</item>
+        <item name="android:windowSplashScreenAnimatedIcon">@drawable/ic_pause_logo</item>
+    </style>
+
+</resources>

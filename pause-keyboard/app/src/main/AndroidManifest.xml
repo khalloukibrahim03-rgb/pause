@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.pause.app">
+
+    <!-- Required for haptic feedback, vibration, and sound -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- Explicitly DO NOT request INTERNET (privacy requirement) -->
+
+    <application
+        android:name=".PauseApplication"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.Pause.Splash"
+        android:supportsRtl="true">
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Pause">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".settings.SettingsActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Pause" />
+
+        <activity
+            android:name=".dashboard.DashboardActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Pause" />
+
+        <!-- InputMethodService from the :keyboard library module.
+             Must be declared in the application manifest for Android Settings
+             to detect the keyboard. -->
+        <service
+            android:name="com.pause.keyboard.PauseInputMethodService"
+            android:label="@string/keyboard_name"
+            android:permission="android.permission.BIND_INPUT_METHOD"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.view.InputMethod" />
+            </intent-filter>
+            <meta-data
+                android:name="android.view.imelayout"
+                android:resource="@xml.keyboard_settings" />
+        </service>
+    </application>
+</manifest>

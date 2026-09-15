@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Light theme -->
+    <color name="pause_primary">#4A90E2</color>
+    <color name="pause_primary_variant">#3A7BC8</color>
+    <color name="pause_on_primary">#FFFFFF</color>
+    <color name="pause_secondary">#FF9800</color>
+    <color name="pause_secondary_variant">#E68900</color>
+    <color name="pause_on_secondary">#FFFFFF</color>
+    <color name="pause_window_bg_light">#FFFFFF</color>
+    <color name="pause_surface_light">#F5F5F5</color>
+    <color name="pause_on_surface_light">#212121</color>
+
+    <!-- Dark theme -->
+    <color name="pause_window_bg_dark">#121212</color>
+    <color name="pause_surface_dark">#1E1E1E</color>
+    <color name="pause_on_surface_dark">#E0E0E0</color>
+
+    <!-- Key colors - light -->
+    <color name="key_bg_light">#F0F0F0</color>
+    <color name="key_function_light">#E0E0E0</color>
+    <color name="key_action_light">#D0D0D0</color>
+    <color name="key_text_light">#212121</color>
+    <color name="key_border_light">#C0C0C0</color>
+
+    <!-- Key colors - dark -->
+    <color name="key_bg_dark">#2D2D2D</color>
+    <color name="key_function_dark">#3A3A3A</color>
+    <color name="key_action_dark">#484848</color>
+    <color name="key_text_dark">#E0E0E0</color>
+    <color name="key_border_dark">#404040</color>
+
+    <!-- Intervention colors -->
+    <color name="intervention_highlight">#204A90E2</color>
+    <color name="intervention_text">#BBDEFB</color>
+    <color name="intervention_text_dark">#81C784</color>
+</resources>

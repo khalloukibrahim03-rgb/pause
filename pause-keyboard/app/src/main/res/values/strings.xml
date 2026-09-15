@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PAUSE</string>
+    <string name="app_version">1.0.0</string>
+    <string name="onboarding_title">Welcome to PAUSE</string>
+    <string name="onboarding_subtitle">A privacy-first keyboard that helps you type mindfully.</string>
+    <string name="onboarding_page1_title">Privacy First</string>
+    <string name="onboarding_page1_desc">PAUSE never logs keystrokes, never stores messages, and never sends text online. All processing is local.</string>
+    <string name="onboarding_page2_title">Mindful Typing</string>
+    <string name="onboarding_page2_desc">PAUSE observes typing patterns locally and offers subtle, non-intrusive pause suggestions — without blocking or shaming.</string>
+    <string name="onboarding_page3_title">Setup Required</string>
+    <string name="onboarding_page3_desc">Enable PAUSE Keyboard in Android Settings to start using it in any app.</string>
+    <string name="enable_keyboard_button">Enable Keyboard</string>
+    <string name="keyboard_enabled">Keyboard enabled</string>
+    <string name="keyboard_not_enabled">Keyboard not enabled</string>
+    <string name="settings_title">PAUSE Settings</string>
+    <string name="dashboard_title">Dashboard</string>
+    <string name="dashboard_wpm_label">Words per minute</string>
+    <string name="dashboard_deletions_label">Deletions</string>
+    <string name="dashboard_impulsivity_label">Impulsivity</string>
+    <string name="dashboard_no_data">No typing data yet. Enable the keyboard and start typing.</string>
+    <string name="settings_appearance">Appearance</string>
+    <string name="settings_feedback">Feedback</string>
+    <string name="settings_privacy">Privacy & Interventions</string>
+    <string name="settings_about">About</string>
+    <string name="privacy_policy_summary">No network. No logging. All local.</string>
+    <string name="version_label">Version 1.0.0</string>
+    <string name="open_source_label">PAUSE is open source.</string>
+</resources>

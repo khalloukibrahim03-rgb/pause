@@ -6,6 +6,7 @@ import com.pause.shared.KeyboardMode
 import com.pause.shared.TypingMetrics
 import com.pause.shared.IntelligenceObserver
 import kotlinx.coroutines.flow.MutableStateFlow
+import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import javax.inject.Inject
 import javax.inject.Singleton
