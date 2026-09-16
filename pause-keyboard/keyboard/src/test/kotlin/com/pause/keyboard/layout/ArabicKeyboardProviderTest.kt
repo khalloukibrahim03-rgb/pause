@@ -10,9 +10,9 @@ import org.junit.jupiter.api.Test
 class ArabicKeyboardProviderTest {
 
     @Test
-    fun alphaLayoutHasFiveRows() {
+    fun alphaLayoutHasFourRows() {
         val def = ArabicKeyboardProvider.provide(KeyboardMode.ALPHA)
-        assertEquals(5, def.rows.size)
+        assertEquals(4, def.rows.size)
     }
 
     @Test

@@ -19,6 +19,7 @@ import javax.inject.Singleton
  * - SettingsManager (wraps DataStore, shared across IME + app processes)
  * - KeyboardState (mutable keyboard state holder)
  * - Vibrator (for haptic feedback)
+ * - Settings provider lambda (consumed by :intelligence module)
  */
 @Module
 @InstallIn(SingletonComponent::class)
@@ -39,4 +40,10 @@ object KeyboardModule {
     fun provideVibrator(
         @ApplicationContext context: Context
     ): Vibrator = context.getSystemService(Context.VIBRATOR_SERVICE) as Vibrator
+
+    @Provides
+    @Singleton
+    fun provideSettingsProvider(
+        settingsManager: SettingsManager
+    ): () -> KeyboardSettings = { settingsManager.currentSettings() }
 }

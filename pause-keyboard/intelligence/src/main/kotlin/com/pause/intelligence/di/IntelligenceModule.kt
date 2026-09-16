@@ -13,20 +13,13 @@ import javax.inject.Singleton
 /**
  * Hilt module for the LocalIntelligence layer.
  *
- * The [com.pause.keyboard.settings.SettingsManager] (in the keyboard module)
- * provides the current settings via a lambda. We expose it here so that
- * [LocalIntelligenceEngine] can be injected across module boundaries
- * without creating a compile-time dependency from intelligence → keyboard.
+ * The settings provider lambda (which depends on SettingsManager from
+ * the keyboard module) is provided by KeyboardModule in the keyboard
+ * module to avoid a circular dependency.
  */
 @Module
 @InstallIn(SingletonComponent::class)
 object IntelligenceModule {
-
-    @Provides
-    @Singleton
-    fun provideSettingsProvider(
-        settingsManager: com.pause.keyboard.settings.SettingsManager
-    ): () -> KeyboardSettings = { settingsManager.currentSettings() }
 
     // TypingSignalCollector, InterventionScheduler, LocalIntelligenceEngine
     // are all @Inject-constructed and auto-provided by Hilt.
