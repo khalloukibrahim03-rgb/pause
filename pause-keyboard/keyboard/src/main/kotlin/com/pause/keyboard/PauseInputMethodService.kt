@@ -12,9 +12,13 @@ import com.pause.intelligence.LocalIntelligenceEngine
 import com.pause.shared.ShiftState
 import com.pause.shared.InterventionProposal
 import dagger.hilt.android.AndroidEntryPoint
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.Job
+import kotlinx.coroutines.SupervisorJob
 import kotlinx.coroutines.flow.collect
+import kotlinx.coroutines.isActive
 import kotlinx.coroutines.launch
-import androidx.lifecycle.lifecycleScope
 import javax.inject.Inject
 
 /**
@@ -42,11 +46,12 @@ class PauseInputMethodService : InputMethodService() {
     lateinit var settingsManager: SettingsManager
 
     private var composeView: ComposeView? = null
+    private val serviceScope = CoroutineScope(Dispatchers.Main + SupervisorJob())
 
     override fun onCreate() {
         super.onCreate()
         // Observe settings changes and propagate to KeyboardState
-        lifecycleScope.launch {
+        serviceScope.launch {
             settingsManager.settingsFlow.collect { settings ->
                 keyboardState.updateSettings(settings)
             }
@@ -77,6 +82,9 @@ class PauseInputMethodService : InputMethodService() {
             )
         }
 
+        // Connect the intelligence observer
+        keyboardState.intelligenceObserver = intelligenceEngine.signalObserver
+
         return cv
     }
 
@@ -87,7 +95,6 @@ class PauseInputMethodService : InputMethodService() {
         }
         keyboardState.updateInputConnection(currentInputConnection)
         keyboardState.setEditorInfo(info)
-        intelligenceEngine.onSessionEnd()
     }
 
     override fun onStartInputView(info: EditorInfo?, restarting: Boolean) {
@@ -103,6 +110,7 @@ class PauseInputMethodService : InputMethodService() {
 
     override fun onDestroy() {
         super.onDestroy()
+        serviceScope.coroutineContext.cancel()
         composeView = null
         intelligenceEngine.onSessionEnd()
         keyboardState.clear()
@@ -125,8 +133,8 @@ class PauseInputMethodService : InputMethodService() {
     }
 
     /**
-     * Handle the back gesture / hard keyboard back key.
-     * If shift is in upper mode, clear it instead of dismissing.
+     * Handle the back gesture. If shift is in upper mode, clear it
+     * instead of dismissing.
      */
     override fun onBackPressed() {
         if (keyboardState.shiftState.value is ShiftState.Upper) {

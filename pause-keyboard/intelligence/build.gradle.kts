@@ -25,7 +25,7 @@ android {
     }
 
     buildFeatures {
-        compose true
+        compose false
     }
 }
 
@@ -34,6 +34,7 @@ dependencies {
     implementation libs.kotlinx.coroutines.core
     implementation libs.kotlinx.coroutines.android
     implementation libs.hilt.android
+    ksp libs.hilt.kapt
 
     testImplementation libs.junit.jupiter.api
     testImplementation libs.junit.jupiter.params

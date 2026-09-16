@@ -22,13 +22,8 @@ android {
     kotlin {
         jvmToolchain(17)
     }
-
-    buildFeatures {
-        compose true
-    }
 }
 
 dependencies {
-    // No compose or hilt needed in pure shared module;
-    // only Kotlin standard library (bundled in AGP)
+    implementation libs.kotlinx.coroutines.core
 }

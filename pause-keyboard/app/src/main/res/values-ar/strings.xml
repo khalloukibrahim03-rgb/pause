@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">باوز</string>
+    <string name="onboarding_title">مرحبا بك في باوز</string>
+    <string name="onboarding_subtitle">لوحة مفاتيح الخاصية بالخصوصية التي تساعدك على الكتابة بوعي.</string>
+    <string name="onboarding_page1_title">الخصوصية أولا</string>
+    <string name="onboarding_page1_desc">باوز لا تسجل المفاتيح المفروغ عليها، ولا تخزن الرسائل، ولا ترسل النص عبر الإنترنت. جميع المعالجة محلية.</string>
+    <string name="onboarding_page2_title">كتابة واعية</string>
+    <string name="onboarding_page2_desc">تراقص باوز أنماط الكتابة محلياً وتقدم اقتراحات منبهة خفيفة - دون منع أو إهماء.</string>
+    <string name="onboarding_page3_title">إعداد مطلوب</string>
+    <string name="onboarding_page3_desc">فعّل لوحة مفاتيح باوز في إعدادات أندرويد لاستخدامها في أي تطبيق.</string>
+    <string name="enable_keyboard_button">تفعيل لوحة المفاتيح</string>
+    <string name="keyboard_enabled">تم تفعيل لوحة المفاتيح</string>
+    <string name="keyboard_not_enabled">لوحة المفاتيح غير مفعلة</string>
+    <string name="settings_title">إعدادات باوز</string>
+    <string name="dashboard_title">لوحة المعلومات</string>
+    <string name="dashboard_wpm_label">كلمات في الدقيقة</string>
+    <string name="dashboard_deletions_label">الحذف</string>
+    <string name="dashboard_impulsivity_label">الاندفاعية</string>
+    <string name="dashboard_no_data">لا توجد بيانات كتابة بعد. فعّل لوحة المفاتيح وابدأ الكتابة.</string>
+    <string name="settings_appearance">المظهر</string>
+    <string name="settings_feedback">التعليقات</string>
+    <string name="settings_privacy">الخصوصية وتداخلات</string>
+    <string name="settings_about">عن التطبيق</string>
+    <string name="privacy_policy_summary">بدون إنترنت. بدون تسجيل. كل شيء محلي.</string>
+    <string name="app_version">1.0.0</string>
+    <string name="version_label">الإصدار 1.0.0</string>
+    <string name="open_source_label">باوز مفتوح المصدر.</string>
+</resources>
