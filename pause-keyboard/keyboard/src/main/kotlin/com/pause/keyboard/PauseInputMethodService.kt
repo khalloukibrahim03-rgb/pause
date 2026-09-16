@@ -4,20 +4,16 @@ import android.inputmethodservice.InputMethodService
 import android.view.KeyEvent
 import android.view.View
 import android.view.inputmethod.EditorInfo
-import android.view.inputmethod.InputConnection
 import androidx.compose.runtime.collectAsState
 import androidx.compose.ui.platform.ComposeView
 import androidx.compose.ui.platform.ViewCompositionStrategy
 import com.pause.intelligence.LocalIntelligenceEngine
 import com.pause.shared.ShiftState
-import com.pause.shared.InterventionProposal
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.Job
 import kotlinx.coroutines.SupervisorJob
 import kotlinx.coroutines.flow.collect
-import kotlinx.coroutines.isActive
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
@@ -134,9 +130,9 @@ class PauseInputMethodService : InputMethodService() {
 
     /**
      * Handle the back gesture. If shift is in upper mode, clear it
-     * instead of dismissing.
+     * instead of dismissing popups.
      */
-    override fun onBackPressed() {
+    fun handleBackPress() {
         if (keyboardState.shiftState.value is ShiftState.Upper) {
             keyboardState.resetShift()
         } else {

@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.library'
     id 'org.jetbrains.kotlin.android'
+    id 'kotlin-parcelize'
 }
 
 android {
@@ -22,8 +23,20 @@ android {
     kotlin {
         jvmToolchain(17)
     }
+
+    testOptions {
+        unitTests {
+            isReturnDefaultValues = true
+            all { it.useJUnitPlatform() }
+        }
+    }
 }
 
 dependencies {
     implementation libs.kotlinx.coroutines.core
+
+    testImplementation libs.junit.jupiter.api
+    testImplementation libs.junit.jupiter.params
+    testImplementation libs.truth
+    testRuntimeOnly("org.junit.platform:junit-platform-launcher:1.11.4")
 }

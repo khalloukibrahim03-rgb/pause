@@ -55,16 +55,16 @@ class TypingSignalCollector @Inject constructor() : IntelligenceObserver {
     private var currentMode: KeyboardMode = KeyboardMode.ALPHA
 
     /** Count of backspace long-presses. */
-    private var backspaceLongPresss: Int = 0
+    internal var backspaceLongPresss: Int = 0
 
     /** Current shift press streak (consecutive shift presses without intermediate keys). */
-    private var shiftStreak: Int = 0
+    internal var shiftStreak: Int = 0
 
     /** Total punctuation keys pressed this session. */
     private var punctuationCount: Int = 0
 
     /** Total words typed (estimated by space / enter count). */
-    private var wordCount: Int = 0
+    internal var wordCount: Int = 0
 
     /** Session start timestamp. */
     val sessionStartTime: Long = System.currentTimeMillis()

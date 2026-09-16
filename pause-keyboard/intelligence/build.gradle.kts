@@ -27,6 +27,13 @@ android {
     buildFeatures {
         compose false
     }
+
+    testOptions {
+        unitTests {
+            isReturnDefaultValues = true
+            all { it.useJUnitPlatform() }
+        }
+    }
 }
 
 dependencies {

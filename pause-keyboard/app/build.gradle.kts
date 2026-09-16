@@ -47,6 +47,13 @@ android {
             )
         }
     }
+
+    testOptions {
+        unitTests {
+            isReturnDefaultValues = true
+            all { it.useJUnitPlatform() }
+        }
+    }
 }
 
 dependencies {
